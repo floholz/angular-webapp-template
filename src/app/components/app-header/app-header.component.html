@@ -1,0 +1,40 @@
+<div class="header">
+  <a class="brand-container" routerLink="" routerLinkActive="active">
+    <img
+      class="logo"
+      alt="Angular Logo"
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+    />
+    <span *ngIf="title" class="title">{{title}}</span>
+  </a>
+  <nav class="nav-container">
+    <a *ngFor="let navRoute of navRoutes"
+       class="nav-item"
+       [id]="'nav-' + navRoute.name"
+       [routerLink]="navRoute.path"
+       routerLinkActive="active"
+       mat-button
+       [color]="navRoute.path === activeRouteUrl ? 'primary' : 'accent'"
+    >
+      <span>
+        <ng-icon *ngIf="navRoute.icon" [name]="navRoute.icon"></ng-icon> {{navRoute.name}}
+      </span>
+    </a>
+  </nav>
+  <div class="profile-container">
+    <button mat-mini-fab [matMenuTriggerFor]="menu" color="accent">
+      <ng-icon name="matPerson" size="1.6rem"></ng-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <span><ng-icon name="matAccountCircle"></ng-icon> Account</span>
+      </button>
+      <button mat-menu-item>
+        <span><ng-icon name="matNotifications"></ng-icon> Notifications</span>
+      </button>
+      <button mat-menu-item>
+        <span><ng-icon name="matSettings"></ng-icon> Settings</span>
+      </button>
+    </mat-menu>
+  </div>
+</div>

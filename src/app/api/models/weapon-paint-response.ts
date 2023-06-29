@@ -1,0 +1,50 @@
+/* tslint:disable */
+/* eslint-disable */
+import { PatternResponse } from './pattern-response';
+import { RarityResponse } from './rarity-response';
+export interface WeaponPaintResponse {
+  color0?: null | string;
+  color1?: null | string;
+  color2?: null | string;
+  color3?: null | string;
+  createdAt?: string;
+  deletedAt?: null | string;
+  description?: null | string;
+  descriptionTag?: null | string;
+  grungePattern?: PatternResponse;
+  grungePatternId?: number;
+  id?: number;
+  ignoreWeaponSizeScale?: null | boolean;
+  isDeleted?: boolean;
+  name?: null | string;
+  normalPattern?: PatternResponse;
+  normalPatternId?: null | number;
+  onlyFirstMaterial?: null | boolean;
+  paintCollectionId?: null | number;
+  pattern?: PatternResponse;
+  patternId?: null | number;
+  patternIndex?: number;
+  patternOffsetXEnd?: null | number;
+  patternOffsetXStart?: null | number;
+  patternOffsetYEnd?: null | number;
+  patternOffsetYStart?: null | number;
+  patternRotationEnd?: null | number;
+  patternRotationStart?: null | number;
+  patternScale?: null | number;
+  pearlescent?: null | number;
+  phongAlbedoBoost?: null | number;
+  phongExponent?: null | number;
+  phongIntensity?: null | number;
+  rarity?: RarityResponse;
+  rarityId?: null | number;
+  scratchPattern?: PatternResponse;
+  scratchPatternId?: number;
+  useNormal?: boolean;
+  version?: number;
+  viewModelExponentOverrideSize?: null | number;
+  weaponFinishStyleId?: number;
+  weaponId?: number;
+  wearDefault?: null | number;
+  wearRemapMax?: null | number;
+  wearRemapMin?: null | number;
+}

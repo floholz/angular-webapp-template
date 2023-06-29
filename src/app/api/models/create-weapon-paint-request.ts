@@ -1,0 +1,39 @@
+/* tslint:disable */
+/* eslint-disable */
+export interface CreateWeaponPaintRequest {
+  color0?: null | string;
+  color1?: null | string;
+  color2?: null | string;
+  color3?: null | string;
+  description?: null | string;
+  descriptionTag?: null | string;
+  grungePatternId?: null | number;
+  ignoreWeaponSizeScale?: null | boolean;
+  name?: null | string;
+  normalPatternId?: null | number;
+  onlyFirstMaterial?: null | boolean;
+  paintCollectionId?: null | number;
+  patternId?: null | number;
+  patternIndex?: null | number;
+  patternOffsetXEnd?: null | number;
+  patternOffsetXStart?: null | number;
+  patternOffsetYEnd?: null | number;
+  patternOffsetYStart?: null | number;
+  patternRotationEnd?: null | number;
+  patternRotationStart?: null | number;
+  patternScale?: null | number;
+  pearlescent?: null | number;
+  phongAlbedoBoost?: null | number;
+  phongExponent?: null | number;
+  phongIntensity?: null | number;
+  rarityId?: null | number;
+  scratchPatternId?: null | number;
+  useNormal?: null | boolean;
+  version?: null | number;
+  viewModelExponentOverrideSize?: null | number;
+  weaponFinishStyleId?: null | number;
+  weaponId?: null | number;
+  wearDefault?: null | number;
+  wearRemapMax?: null | number;
+  wearRemapMin?: null | number;
+}
